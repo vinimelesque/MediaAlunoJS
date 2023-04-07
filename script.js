@@ -5,10 +5,12 @@ function MostrarMedia() {
     var nota2 = parseFloat(document.getElementById("nota2").value);
 
     var media = (nota1 + nota2) / 2;
+    var situacao;
 
     if (media < 5) {
-        alert("A média do aluno " + nome + " é: " + media + ". portanto, o aluno está REPROVADO!");
+        situacao="Reprovado!!!";
     } else {
-        alert("A média do aluno " + nome + " é: " + media + ". portanto, o aluno está Aprovado.");
+        situacao="Aprovado."
     }
+    alert("A média do aluno " + nome + " é: " + media + ". portanto, o aluno está " + situacao);
 }
